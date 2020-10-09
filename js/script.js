@@ -25,8 +25,8 @@ const showPage = (list, page) => {
                   </li>`;
       }
    });
-   studentUl.insertAdjacentHTML('beforeend', html)
-}
+   studentUl.insertAdjacentHTML('beforeend', html);
+};
 // ---------------------------------
 /*--- Display page buttons function ---*/
 const addPagination = (list) => {
@@ -70,7 +70,7 @@ linkList.addEventListener('click', (e) => {
 const searchBarHTML = `<label for="search" class="student-search">
                         <input id="search" placeholder="Search by name...">
                         <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
-                       </label>`
+                       </label>`;
 header.insertAdjacentHTML('beforeend', searchBarHTML);
 
 // ----------------------------------
@@ -87,7 +87,7 @@ searchBar.addEventListener('keyup', (e) => {
       } else {
          return false;
       }
-   })
+   });
    if (searchArray.length === 0) { // test condition which displays the no result message if there are no results.
       messageDiv.classList.remove('hide');
    } else {
