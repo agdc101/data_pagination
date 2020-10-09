@@ -172,8 +172,6 @@ header h2 {
   color: #fff;
 }
 
-
-
 .no-results {
 	font-family: 'Nunito', sans-serif;
 	display: block;
@@ -184,10 +182,15 @@ header h2 {
 	margin-bottom: 15px;
 }
 
-
+.hide {
+  display: none;
+}
+.result_message {
+  text-align: center;
+  font-size: 1.5rem;
+}
 
 @media screen and (min-width: 700px) {
-
 	.page {
 		width: 70%;
 	}
